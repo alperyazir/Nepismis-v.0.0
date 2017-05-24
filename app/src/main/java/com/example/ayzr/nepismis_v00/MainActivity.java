@@ -16,4 +16,10 @@ public class MainActivity extends AppCompatActivity {
     public void button_cook_clicked(View view){
         startActivity(new Intent(this,LoginActivity.class));
     }
+    public void button_market_clicked(View view){
+        startActivity(new Intent(this,LoginActivity.class));
+    }
+    public void button_courier_clicked(View view){
+        startActivity(new Intent(this,LoginActivity.class));
+    }
 }

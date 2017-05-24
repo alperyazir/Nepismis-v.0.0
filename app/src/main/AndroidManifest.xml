@@ -22,18 +22,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".cook"
-            android:label=""
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".CookActivity"
+            android:label="@string/title_activity_cook"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
