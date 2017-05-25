@@ -12,9 +12,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CookActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    final List<String> kisiler=new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +41,20 @@ public class CookActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        kisiler.add(0,"alper");
+        kisiler.add(1,"melike");
+        kisiler.add(2,"izzet");
+        kisiler.add(3,"neşet");
+
+        Custom_order_adapter adapter = new Custom_order_adapter(this,kisiler);
+
+        ListView list = (ListView) findViewById(R.id.list);
+        list.setAdapter(adapter);
+
+
+
+
     }
 
     @Override
