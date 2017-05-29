@@ -43,17 +43,15 @@ public class CookActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         kisiler.add(0,"alper");
-        kisiler.add(1,"melike");
-        kisiler.add(2,"izzet");
-        kisiler.add(3,"neşet");
+        kisiler.add(1,"tiner");
+        kisiler.add(2,"şamp");
+        kisiler.add(3,"kocabas");
+        kisiler.add(4,"izzet");
+        kisiler.add(5,"neşet");
 
-        Custom_order_adapter adapter = new Custom_order_adapter(this,kisiler);
-
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setAdapter(adapter);
-
-
-
+        ListView listView = (ListView) findViewById(R.id.list);
+        ListAdapter adapter = new ListAdapter(this,kisiler);
+        listView.setAdapter(adapter);
 
     }
 
