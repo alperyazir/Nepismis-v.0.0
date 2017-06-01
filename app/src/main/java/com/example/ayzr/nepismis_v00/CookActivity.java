@@ -1,5 +1,7 @@
 package com.example.ayzr.nepismis_v00;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -93,19 +95,26 @@ public class CookActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_order) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_menu_on_order) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_do_sale) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_questionnaire) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_make_questionnaire) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_my_account) {
+            startActivity(new Intent(this, AccountActivity.class));
+        } else if (id == R.id.nav_help) {
+
+        } else if (id == R.id.nav_sign_out) {
+
+        } else if (id == R.id.nav_about) {
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

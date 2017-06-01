@@ -27,7 +27,9 @@
         <activity
             android:name=".CookActivity"
             android:label="@string/title_activity_cook"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".Profile_Activity"></activity>
     </application>
 
 </manifest>
