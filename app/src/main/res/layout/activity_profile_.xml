@@ -22,7 +22,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
@@ -32,15 +32,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="0dp"
+            android:background="#DE4064"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -53,22 +56,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#DE4064"
                 android:gravity="center"
                 android:text="Profil Bilgilerim"
                 android:textColor="@android:color/black" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btn_profile_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@drawable/down_arrow"
+                android:onClick="btn_profile_arrow_clicked" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layout_profile"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+
             android:orientation="vertical"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -78,6 +86,7 @@
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Ayşe Fatma Hayriye"
                 android:textColor="@android:color/black" />
 
@@ -85,6 +94,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="TextView"
                 android:textColor="@android:color/black"
                 tools:text="AyseFatmaHayriye@nepismis.com" />
@@ -93,6 +103,7 @@
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="1234567890"
                 android:textColor="@android:color/black" />
 
@@ -100,14 +111,16 @@
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Avalon, San Francisco - California  USA"
                 android:textColor="@android:color/black" />
+
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -119,15 +132,18 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:id="@+id/linearLayout2">
+        android:id="@+id/linearLayout2"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="0dp"
+            android:background="#DE4064"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -145,10 +161,12 @@
                 android:textColor="@android:color/black" />
 
             <Button
-                android:id="@+id/button44"
+                android:id="@+id/btn_account_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@drawable/down_arrow"
+                android:onClick="btn_account_arrow_clicked" />
 
         </LinearLayout>
 
@@ -193,11 +211,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="8dp">
+                tools:layout_editor_absoluteY="8dp"
+                android:layout_marginTop="5dp">>
 
                 <TextView
                     android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="Satış Adedi"
                     android:textColor="@android:color/black" />
@@ -215,11 +234,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="8dp">
+                tools:layout_editor_absoluteY="8dp"
+                android:layout_marginTop="5dp">
 
                 <TextView
                     android:id="@+id/textview141"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="Satış Tutarı"
                     android:textColor="@android:color/black" />
@@ -237,11 +257,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="8dp">
+                tools:layout_editor_absoluteY="8dp"
+                android:layout_marginTop="5dp">
 
                 <TextView
                     android:id="@+id/textView142"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="Hakediş"
                     android:textColor="@android:color/black" />

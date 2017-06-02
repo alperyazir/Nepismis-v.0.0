@@ -20,7 +20,7 @@ public class AccountActivity extends AppCompatActivity {
     }
 
     public void btn_comment_clicked(View view){
-
+        startActivity(new Intent(this,CommentActivity.class));
     }
 
 
